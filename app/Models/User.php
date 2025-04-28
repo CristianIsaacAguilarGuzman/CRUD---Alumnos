@@ -6,6 +6,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
+
+
+class Seccion extends Model
+{
+    use HasFactory;
+
+    // Definir los campos que pueden ser asignados masivamente
+    protected $fillable = ['nombre'];
+}
 
 class User extends Authenticatable
 {
